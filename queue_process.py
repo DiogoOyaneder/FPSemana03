@@ -4,7 +4,8 @@ a = input("").split()
 queue = deque()
 for i in a:
     queue.appendleft(i)
-print(list(queue))
-for i in queue:
-    if 'a' in i:
-        print(i)
+print(queue)
+for i in range(len(queue)):
+    word = queue.pop()
+    if 'a' in word:
+        print(word)
